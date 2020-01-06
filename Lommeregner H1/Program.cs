@@ -8,6 +8,10 @@ namespace Lommeregner_H1
         {
             return result + num;       
         }
+        public static double minus(double result, double num)
+        {
+            return result - num;
+        }
         static double Addition(double result, double num2)
         {
             return result * num2;
@@ -18,7 +22,7 @@ namespace Lommeregner_H1
         }
 
         static void Main()
-        {
+        { 
             Console.Write("Number 1: ");
             double result = Convert.ToDouble(Console.ReadLine());
 
@@ -36,7 +40,7 @@ namespace Lommeregner_H1
                         result += Plus(result, num2);
                         break;
                     case "-":
-                        //result += Subtract
+                        result += minus(result, num2);
                         break;
                     case "*":
                         result += Addition(result, num2);
