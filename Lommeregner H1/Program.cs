@@ -4,6 +4,19 @@ namespace Lommeregner_H1
 {
     class Program
     {
+        static double Plus(double result, double num)
+        {
+            return result + num;       
+        }
+        static double Addition(double result, double num2)
+        {
+            return result * num2;
+        }
+        static double Divide(double result, double num2)
+        {
+            return result / num2;
+        }
+
         static void Main()
         {
             Console.Write("Number 1: ");
@@ -15,21 +28,21 @@ namespace Lommeregner_H1
                 string OpType = Console.ReadLine();
 
                 Console.Write("Number 2: ");
-                double numtwo = Convert.ToDouble(Console.ReadLine());
+                double num2 = Convert.ToDouble(Console.ReadLine());
 
                 switch (OpType)
                 {
                     case "+":
-                        //result += Add
+                        result += Plus(result, num2);
                         break;
                     case "-":
                         //result += Subtract
                         break;
                     case "*":
-                        //result += Addition
+                        result += Addition(result, num2);
                         break;
                     case "/":
-                        //result += Division
+                        result += Divide(result, num2);
                         break;
                     default:
                         Console.WriteLine($"Your result is {result}");
