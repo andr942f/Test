@@ -8,7 +8,7 @@ namespace Lommeregner_H1
         {
             return result + num;       
         }
-        public static double minus(double result, double num)
+        public static double Minus(double result, double num)
         {
             return result - num;
         }
@@ -40,7 +40,7 @@ namespace Lommeregner_H1
                         result += Plus(result, num2);
                         break;
                     case "-":
-                        result += minus(result, num2);
+                        result += Minus(result, num2);
                         break;
                     case "*":
                         result += Addition(result, num2);
