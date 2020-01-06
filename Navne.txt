@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 That's a me Sonno
+=======
+Mit navn er heff ;)
+It's a me Sonno
