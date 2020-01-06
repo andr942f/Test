@@ -1,6 +1,17 @@
 {
   "format": 1,
   "restore": {
+    "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\Lommeregner H1.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\Lommeregner H1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\Lommeregner H1.csproj",
+        "projectName": "Lommeregner H1",
+        "projectPath": "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\Lommeregner H1.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Desktop\\hubgit\\Test\\Lommeregner H1\\obj\\",
     "C:\\Users\\NikolaiGrønborgJense\\Desktop\\H1\\Versionsstyring\\Test\\Lommeregner H1\\Lommeregner H1.csproj": {}
   },
   "projects": {
@@ -17,11 +28,7 @@
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\NikolaiGrønborgJense\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp3.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
