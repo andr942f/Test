@@ -4,13 +4,16 @@ namespace Lommeregner_H1
 {
     class Program
     {
-        public static double plus(double result, double num)
+
+        public static double minus(double result, double num)
         {
-            return result + num;       
+            return result - num;
         }
 
-        static void Main()
+        static void Main(string[] args)
         {
+
+
             Console.Write("Number 1: ");
             double result = Convert.ToDouble(Console.ReadLine());
 
@@ -25,10 +28,10 @@ namespace Lommeregner_H1
                 switch (OpType)
                 {
                     case "+":
-                        result += plus(result, num2);
+                        //result += Add
                         break;
                     case "-":
-                        //result += Subtract
+                        result += minus(result, num2);
                         break;
                     case "*":
                         //result += Addition
