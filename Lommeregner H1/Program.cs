@@ -27,27 +27,32 @@ namespace Lommeregner_H1
                 Console.Write("Operator type: ");
                 string OpType = Console.ReadLine();
 
+                if (OpType != "+" && OpType != "-" && OpType != "*" && OpType != "/")
+                {
+                    Console.WriteLine($"Your result is {result}");
+                    Console.ReadKey();
+                    return;
+                }
+
                 Console.Write("Number 2: ");
                 double num2 = Convert.ToDouble(Console.ReadLine());
 
                 switch (OpType)
                 {
                     case "+":
-                        result += plus(result, num2);
+                        result = plus(result, num2);
                         break;
                     case "-":
-                        result += minus(result, num2);
+                        result = minus(result, num2);
                         break;
                     case "*":
-                        //result += Addition
+                        //result = Addition
                         break;
                     case "/":
-                        //result += Division
+                        //result = Division
                         break;
                     default:
-                        Console.WriteLine($"Your result is {result}");
-                        Console.ReadKey();
-                        return;
+                        break;
                 }
             }
         }
