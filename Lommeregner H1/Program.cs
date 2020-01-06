@@ -17,7 +17,7 @@ namespace Lommeregner_H1
 
         static void Main(string[] args)
         {
-
+            // Hey Slothman
 
             Console.Write("Number 1: ");
             double result = Convert.ToDouble(Console.ReadLine());
