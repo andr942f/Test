@@ -18,8 +18,9 @@ namespace Lommeregner_H1
         static void Main(string[] args)
         {
             // Hey Slothman
+            int TIME = 1;
 
-            Console.Write("Number 1: ");
+            Console.Write($"Number {TIME++}: ");
             double result = Convert.ToDouble(Console.ReadLine());
 
             while (true)
@@ -33,8 +34,7 @@ namespace Lommeregner_H1
                     Console.ReadKey();
                     return;
                 }
-
-                Console.Write("Number 2: ");
+                Console.Write($"Number {TIME++}: ");
                 double num2 = Convert.ToDouble(Console.ReadLine());
 
                 switch (OpType)
