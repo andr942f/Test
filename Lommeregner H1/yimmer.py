@@ -1,0 +1,1 @@
+Lasse har homoerotiske tendenser
