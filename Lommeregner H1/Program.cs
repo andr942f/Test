@@ -46,10 +46,10 @@ namespace Lommeregner_H1
                 switch (OpType)
                 {
                     case "+":
-                        result = plus(result, num2);
+                        result = Plus(result, num2);
                         break;
                     case "-":
-                        result = minus(result, num2);
+                        result = Minus(result, num2);
                         break;
                     case "*":
                         //result = Addition
