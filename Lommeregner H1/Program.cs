@@ -25,6 +25,7 @@ namespace Lommeregner_H1
         { 
             Console.Write("Number 1: ");
             double result = Convert.ToDouble(Console.ReadLine());
+            int Counter = 1;
 
             while (true)
             {
@@ -38,7 +39,8 @@ namespace Lommeregner_H1
                     return;
                 }
 
-                Console.Write("Second Number: ");
+                Counter++;
+                Console.Write($"Number {Counter}: ");
                 double num2 = Convert.ToDouble(Console.ReadLine());
 
                 switch (OpType)
