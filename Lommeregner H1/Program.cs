@@ -18,6 +18,8 @@ namespace Lommeregner_H1
         }
         static double Divide(double result, double num2)
         {
+            // Hey Slothman
+
             return result / num2;
         }
 
@@ -48,6 +50,16 @@ namespace Lommeregner_H1
                         break;
                     case "-":
                         result = Minus(result, num2);
+                        break;
+                    case "*":
+                        //result = Addition
+                        break;
+                    case "/":
+                        //result = Division
+                        result += Plus(result, num2);
+                        break;
+                    case "-":
+                        result += Minus(result, num2);
                         break;
                     case "*":
                         result += Addition(result, num2);
