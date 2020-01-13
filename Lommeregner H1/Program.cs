@@ -18,8 +18,6 @@ namespace Lommeregner_H1
         }
         static double Divide(double result, double num2)
         {
-            // Hey Slothman
-
             return result / num2;
         }
 
@@ -40,23 +38,13 @@ namespace Lommeregner_H1
                     return;
                 }
 
-                Console.Write("Number 2: ");
+                Console.Write("Second Number: ");
                 double num2 = Convert.ToDouble(Console.ReadLine());
 
                 switch (OpType)
                 {
                     case "+":
                         result = Plus(result, num2);
-                        break;
-                    case "-":
-                        result = Minus(result, num2);
-                        break;
-                    case "*":
-                        //result = Addition
-                        break;
-                    case "/":
-                        //result = Division
-                        result += Plus(result, num2);
                         break;
                     case "-":
                         result += Minus(result, num2);
