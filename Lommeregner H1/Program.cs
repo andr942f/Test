@@ -12,25 +12,30 @@ namespace Lommeregner_H1
         {
             return result - num;
         }
-        static double Addition(double result, double num2)
+        static double Addition(double result, double num)
         {
-            return result * num2;
+            return result * num;
         }
-        static double Divide(double result, double num2)
+        static double Divide(double result, double num)
         {
-            return result / num2;
+            return result / num;
         }
-
+        
         static void Main()
         { 
-            Console.Write("Number 1: ");
+            /// <param name="count"> Used to count amount of numbers entered, incrimenting by 1 every number. </param>
+            int count = 1;
+            Console.Write($"Number {count++}: ");
+            //Total sum, the calculation, the result
             double result = Convert.ToDouble(Console.ReadLine());
 
             while (true)
             {
                 Console.Write("Operator type: ");
+                //Write the operator type being either plus, minus, divide or addition
                 string OpType = Console.ReadLine();
 
+                //If a valid operator type isn't used, calculate all numbers entered
                 if (OpType != "+" && OpType != "-" && OpType != "*" && OpType != "/")
                 {
                     Console.WriteLine($"Your result is {result}");
@@ -38,22 +43,23 @@ namespace Lommeregner_H1
                     return;
                 }
 
-                Console.Write("Second Number: ");
-                double num2 = Convert.ToDouble(Console.ReadLine());
+                Console.Write($"Number {count++}: ");
+                double num = Convert.ToDouble(Console.ReadLine());
 
+                //maths all depending on which operator type you pick
                 switch (OpType)
                 {
                     case "+":
-                        result = Plus(result, num2);
+                        result = Plus(result, num);
                         break;
                     case "-":
-                        result += Minus(result, num2);
+                        result += Minus(result, num);
                         break;
                     case "*":
-                        result += Addition(result, num2);
+                        result += Addition(result, num);
                         break;
                     case "/":
-                        result += Divide(result, num2);
+                        result += Divide(result, num);
                         break;
                     default:
                         break;
