@@ -12,7 +12,7 @@ namespace Lommeregner_H1
         {
             return result - num;
         }
-        static double Addition(double result, double num)
+        static double Multi(double result, double num)
         {
             return result * num;
         }
@@ -32,7 +32,7 @@ namespace Lommeregner_H1
             while (true)
             {
                 Console.Write("Operator type: ");
-                //Write the operator type being either plus, minus, divide or addition
+                //Write the operator type being either plus, minus, divide or multiplication
                 string OpType = Console.ReadLine();
 
                 //If a valid operator type isn't used, calculate all numbers entered
@@ -53,13 +53,13 @@ namespace Lommeregner_H1
                         result = Plus(result, num);
                         break;
                     case "-":
-                        result += Minus(result, num);
+                        result = Minus(result, num);
                         break;
                     case "*":
-                        result += Addition(result, num);
+                        result = Multi(result, num);
                         break;
                     case "/":
-                        result += Divide(result, num);
+                        result = Divide(result, num);
                         break;
                     default:
                         break;
